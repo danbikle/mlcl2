@@ -21,8 +21,8 @@ predictions_a   = np.matmul(x_a,w_a)
 
 # I should write the predictions to CSV in a way which helps me compare then to observations:
 test_df['prediction'] = [prediction[0] for prediction in predictions_a]
-test_df[['f0','f1','prediction']].to_csv('/tmp/iris_predicitons.csv', float_format='%4.2f', index=False)
+test_df[['f0','f1','prediction']].to_csv('/tmp/iris_predictions.csv', float_format='%4.2f', index=False)
 
-print('Predictions should be here: /tmp/iris_predicitons.csv')
+print('Predictions should be here: /tmp/iris_predictions.csv')
 'bye'
 
