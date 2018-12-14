@@ -8,7 +8,6 @@ python slice_train_test.py
 """
 
 import pandas as pd
-import pdb
 
 # I should read iris.csv into a DataFrame:
 
