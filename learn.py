@@ -1,9 +1,18 @@
-# learn.py
+"""
+learn.py
+
+This script should learn from /tmp/iris_train.csv
+I should assume that f1 column depends on f0 column.
+The resulting model should be two numbers.
+sklearn names the two numbers: intercept_ and coef_
+I prefer the first number be called the "bias".
+I prefer the second number be called "weight of x".
+
+Demo:
+python learn.py
+"""
 
 import pandas as pd
-import pdb
-# This script should learn from /tmp/iris_train.csv
-# I should assume that f1 column depends on f0 column.
 
 train_df = pd.read_csv('/tmp/iris_train.csv')
 
