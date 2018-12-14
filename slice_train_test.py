@@ -1,6 +1,11 @@
-# slice_train_test.py
+"""
+slice_train_test.py
 
-# This script should slice iris.csv into /tmp/iris_train.csv and /tmp/iris_test.csv
+This script should slice iris.csv into /tmp/iris_train.csv and /tmp/iris_test.csv
+
+Demo:
+python slice_train_test.py
+"""
 
 import pandas as pd
 import pdb
@@ -12,11 +17,11 @@ iris1_df = iris0_df[['f0','f1']]
 
 # I should get the training data:
 
-train_df = iris1_df[0:140]
+train_df = iris1_df.iloc[0:140]
 
 # I should get the test data:
 
-test_df = iris1_df[140:150]
+test_df = iris1_df.iloc[140:150]
 
 # I should write to csv files:
 
