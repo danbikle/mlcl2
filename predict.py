@@ -1,10 +1,14 @@
-# predict.py
+"""
+predict.py
 
-# This script should use the model in /tmp/iris_model.csv to predict X-values in /tmp/iris_test.csv
+This script should use the model in /tmp/iris_model.csv to predict X-values in /tmp/iris_test.csv
+
+Demo:
+python predict.py
+"""
 
 import pandas as pd
 import numpy  as np
-import pdb
 
 # I should get the data I want to predict:
 test_df         = pd.read_csv('/tmp/iris_test.csv')
